@@ -6,10 +6,9 @@ use Illuminate\Http\Request;
 
 class CommentController extends Controller
 {
-    public function show(string $id): View
+    public function show(string $id): string
     {
-        return view('user.profile', [
-            'user' => User::findOrFail($id)
-        ]);
+        
+        return "show";
     }
 }
